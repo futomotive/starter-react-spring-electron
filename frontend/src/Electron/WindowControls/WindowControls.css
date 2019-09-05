@@ -1,0 +1,58 @@
+#WindowControls {
+  display: grid;
+  grid-template-columns: repeat(3, 46px);
+  position: absolute;
+  right: 0;
+  height: 32px;
+  -webkit-app-region: no-drag;
+}
+
+#WindowControls .button {
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  font-family: "Segoe MDL2 Assets";
+  font-size: 10px;
+  color: #ccc;
+  user-select: none;
+}
+#WindowControls .button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+#WindowControls-MinButton {
+  grid-column: 1;
+}
+#WindowControls-MinButton::before {
+  content: "\E921";
+}
+
+#WindowControls-MaxButton {
+  grid-column: 2;
+}
+#WindowControls-MaxButton::before {
+  content: "\E922";
+}
+
+#WindowControls #WindowControls-RestoreButton {
+  grid-column: 2;
+  display: none;
+}
+#WindowControls-RestoreButton::before {
+  content: "\E923";
+}
+
+#WindowControls-CloseButton {
+  grid-column: 3;
+}
+#WindowControls-CloseButton::before {
+  content: "\E8BB";
+}
+#WindowControls #WindowControls-CloseButton:hover {
+  background: #e81123;
+}

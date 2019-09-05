@@ -1,0 +1,39 @@
+#TopAppBar {
+  position: fixed;
+  box-sizing: border-box;
+  height: 32px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  background: #0c0c0d;
+  color: #f2f2f3;
+  -webkit-app-region: drag;
+}
+
+#TopAppBar-Logo {
+  width: auto;
+  height: 32px;
+  margin: 0;
+  padding: 4px;
+}
+
+#TopAppBar-Logo > * {
+  height: 24px;
+}
+
+#TopAppBar-Title {
+  width: auto;
+  height: 32px;
+  margin: 0;
+  padding: 6px 12px 6px 0px;
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}

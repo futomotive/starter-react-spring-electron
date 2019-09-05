@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>react-spring-electron</title>
+    <link rel="stylesheet" href="splash.css" />
+  </head>
+  <body>
+    <div id="close-button"></div>
+    <div id="main">
+      <div id="logos">
+        <img alt="React.js" src="react.svg" width="100%">
+        <img alt="Spring Boot" src="spring.svg" width="60%">
+        <img alt="Electron" src="electron.svg" width="55%">
+      </div>
+      <h1>React Spring Electron Starter</h1>
+      <p>You are running on:</p>
+      <table>
+        <tr>
+          <td>Node.js</td>
+          <td><span id="node-version" /></span></td>
+        </tr>
+        <tr>
+          <td>Chromium</td>
+          <td><span id="chrome-version" /></span></td>
+        </tr>
+        <tr>
+          <td>Electron</td>
+          <td><span id="electron-version" /></span></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./close-button.js"></script>
+  </body>
+</html>
